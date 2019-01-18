@@ -49,17 +49,15 @@ export default class Content extends Component {
     }
 
     const filteredCard = this.state.cards.map(card => {
-       if (card.tab === this.state.selected) {
-         return card
-       }
+       return card.tab === this.state.selected && card
+      
     })
     return filteredCard;
   };
 
   render() {
 
-    // console.log(this.state.cards);
-    console.log(this.filterCards())
+    
 
     return (
       <div className="content-container">
@@ -68,7 +66,7 @@ export default class Content extends Component {
           `selectedTab` that includes the currently selected tab
           and `selectTabHandler` that includes the function to change the selected tab
         */}
-        <Tabs tabs={this.state.tabs} selectedTab={this.state.selected} selectTabHandler={this.selectTabHandler} />
+        <Tabs tabs={this.state.tabs} selectedTab={this.state.selected} selectTabHandler={this.changeSelected} />
         <Cards cards={this.filterCards()} />
       </div>
     );
