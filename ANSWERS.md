@@ -1,0 +1,7 @@
+1. Proptypes is a package that can be installed into a React project. It allows a developer to validate data during development as its passed down to child compponents from its parent as props at the time a component is created.
+
+2. One of lifecycle method is `componentDidMount()` which is a method that gets invoked after `render()`. It's common use is for the asynchronous loading of data or anything else that may need to happen after a component is loaded. It's only called once during the entire React lifecycle. 
+
+3. Higher Order Component is a pattern in React in which a functional component receives another component as its argument. Components build via a higher order component will potentially share logic or can even be conditionally rendered based on it's state.
+
+4. The first way we can style components is via basic css. The benefit would be flexability. A developer could break css off into separate files or hold all styles in one file. The second method is reactstrap, which is a framework with a wide array of prebuilt styled components that can be used in React. The benifit with reactstrap would be the ease ability to quickly and easily style a project, since the styling is pretty much done for you. The last method would by the use of styled-components. Styled-components is a library that allows css to be written in JS. The benefit of styled-components is that all code would live in the same .js file, which could perhaps make refactoring and organization easier. 
